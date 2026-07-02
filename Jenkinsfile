@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo '=== Criando arquivo do site e gerando a Imagem Docker ==='
                 sh """
-                    echo "<h1>Bolo Assado pelo Jenkins no CachyOS e enviado pro Docker Hub!</h1>" > index.html
+                    echo "<h1>funcionando tudo certinho!</h1>" > index.html
                     echo "FROM nginx:alpine" > Dockerfile
                     echo "COPY index.html /usr/share/nginx/html/" >> Dockerfile
                 """
